@@ -50,10 +50,10 @@ export const StarBackground = () => {
       newMeteors.push({
         id: i,
         size: Math.random() * 2 + 1, // Random size between 1 and 3
-        x: Math.random() * 100, // Random position in viwwport
-        y: Math.random() * 20,
-        delay: Math.random() * 15, // Random opacity between 0.5 and 1
-        animationDuration: Math.random() * 3 + 3 // Random duration between 5 and 10 seconds
+        x: Math.random() * 100,
+        y: Math.random() * 50, 
+        delay: Math.random() * 15, // Random delay between 0 and 15 seconds
+        animationDuration: Math.random() * 3 + 3 // Random duration between 3 and 6 seconds
       });
     }
 

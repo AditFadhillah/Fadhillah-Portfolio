@@ -1,7 +1,6 @@
-import { ExternalLink, Github } from 'lucide-react';
+import { ArrowRight, ExternalLink, Github } from 'lucide-react';
 import { cn } from "@/lib/utils"; // Assuming you have a utility function for class names
 import React from 'react';
-
 
 const projects = [
   {
@@ -55,35 +54,59 @@ export const ProjectSection = () => {
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/> 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                /> 
               </div>
 
               <div className='p-6'>
                 <div className='flex flex-wrap gap-2 mb-4'>
-                  {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs border font-medium rounded-full bg-secondary-foreground">
+                  {project.tags.map((tag, idx) => (
+                    <span 
+                      key={idx}
+                      className="px-2 py-1 text-xs border font-medium rounded-full bg-secondary-foreground"
+                    >
                       {tag}
                     </span>
                   ))}
                 </div> 
-              </div>
 
-              <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-              <p className="text-muted-foreground mb-4">
-                {project.description}
-              </p>
-              <div className="flex justify-between items-center">
-                <div className="flex space-x-3">
-                  <a> 
-                    <ExternalLink /> 
-                  </a>
-                  <a href={project.URL} target="_blank" rel="noopener noreferrer"> 
-                    <Github /> 
-                  </a>
+                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+                <p className="text-muted-foreground mb-4">
+                  {project.description}
+                </p>
+                <div className="flex justify-between items-center">
+                  <div className="flex space-x-3">
+                    <a 
+                      href={project.demoURL} 
+                      target="_blank"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300" 
+                      rel="noopener noreferrer"
+                    > 
+                      <ExternalLink size={20} /> 
+                    </a>
+                    <a 
+                      href={project.gitURL} 
+                      target="_blank"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300" 
+                      rel="noopener noreferrer"
+                    >  
+                      <Github size={20} /> 
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <a
+            className="cosmic-button w-fit flex items-center gap-2 mx-auto" 
+            target="_blank"
+            href="https://github.com/AditFadhillah"
+          > 
+            Check My GitHub <ArrowRight size={20} />
+          </a>
         </div>
       </div>
     </section>
