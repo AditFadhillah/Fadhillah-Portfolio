@@ -1,0 +1,195 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[british]{babel}
+\usepackage[left = 0mm, right = 0mm, top = 0mm, bottom = 0mm]{geometry}
+\usepackage[stretch = 25, shrink = 25, tracking=true, letterspace=30]{microtype}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{marvosym}
+\usepackage{enumitem}
+\setlist[itemize]{
+    leftmargin=1.1em,
+    topsep=8pt,
+    partopsep=0pt,
+    itemsep=4pt,
+    parsep=0pt
+}
+
+\usepackage{fontawesome}
+\setlist{parsep = 0pt, topsep = 1pt, partopsep = 1pt, itemsep = 2pt, leftmargin = 6mm}
+
+\usepackage{FiraSans}
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{cvblue}{HTML}{304263}
+
+\newcommand{\dates}[1]{\hfill\mbox{\textbf{#1}}}
+\newcommand{\is}{\par\vskip.5ex plus .4ex}
+\newcommand{\smaller}[1]{{\small$\diamond$\ #1}}
+\newcommand{\headleft}[1]{\vspace*{3ex}\textsc{\textbf{#1}}\par%
+\vspace*{-1.5ex}\hrulefill\par\vspace*{0.7ex}}
+\newcommand{\headright}[1]{\vspace*{2.5ex}\textsc{\Large\color{gray}#1}\par%
+\vspace*{-2ex}{\color{gray}\hrulefill}\par}
+\newcommand{\projectheading}[2]{%
+    \noindent\textbf{\textsc{#1}} \hfill \textbf{#2}\par
+    \vspace{-0.3em}
+}
+
+\usepackage[colorlinks = true, urlcolor = white, linkcolor = white]{hyperref}
+
+\begin{document}
+
+\setlength{\topskip}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\fboxsep}{0pt}
+\pagestyle{empty}
+\raggedbottom
+
+\begin{minipage}[t]{0.33\textwidth}
+\colorbox{gray}{\begin{minipage}[t][5mm][t]{\textwidth}\null\hfill\null\end{minipage}}
+
+\vspace{-.2ex}
+\colorbox{gray!90}{\color{white}
+\kern0.09\textwidth\relax
+\begin{minipage}[t][293mm][t]{0.82\textwidth}
+\raggedright
+\vspace*{2.5ex}
+
+\Large\textbf{\textsc{Aditya Fadhillah}} \normalsize\\[0.6ex]
+\textbf{Master of Science in Computer Science}\\
+Software Developer Profile
+
+\null\hfill\includegraphics[width=0.90\textwidth]{profile.png}\hfill\null
+
+\vspace*{0.5ex}
+
+\headleft{Contact details}
+\small
+\MVAt\ {\small fadhillah.adit@gmail.com} \\[0.5ex]
+\Mobilefone\ +45 42 78 92 79 \\[0.5ex]
+\faMapMarker\ Frederiksberg, Denmark \\[0.5ex]
+\faGithub\ \href{https://github.com/AditFadhillah}{github.com/AditFadhillah} \\[0.5ex]
+\faGlobe\ \href{https://aditfadhillah.github.io/Fadhillah-Portfolio}{aditfadhillah.github.io/Fadhillah-Portfolio} \\[0.5ex]
+\faLinkedinSquare\ \href{https://www.linkedin.com/in/aditya-fadhillah-427642286}{linkedin.com/in/aditya-fadhillah-427642286/}
+\normalsize
+
+\headleft{Personal information}
+Work authorisation: \textbf{Danish permanent residence permit} \\[0.4em]
+Languages: 
+\begin{itemize}
+\vspace{-0.5em}
+    \item \textbf{English} (professional)
+    \item \textbf{Danish} (professional)
+    \item \textbf{Indonesian} (native)
+\end{itemize}
+
+\headleft{Technical Skills}
+\begin{itemize}
+\item \textbf{Programming:} Python, .NET, Java, F\#, TypeScript, Haskell
+\item \textbf{Web:} React, HTML, CSS, REST APIs
+\item \textbf{Backend:} FastAPI, API design, Python tooling, code analysis
+\item \textbf{Databases and cloud:} MySQL, Azure, cloud-based app development
+\item \textbf{Software engineering:} Git, testing, debugging, documentation, requirements
+\item \textbf{Tools:} UI/UX, interaction design, DCR Graphs, AST-based analysis
+\end{itemize}
+
+\end{minipage}%
+\kern 0.09\textwidth\relax }
+\end{minipage}
+\hskip2.5em
+\begin{minipage}[t]{0.56\textwidth}
+
+\vspace{2ex}
+
+\headright{Profile Summary}
+Recent MSc graduate in Computer Science from the University of Copenhagen with an interest in software development, web applications, backend logic, and user-centred digital tools. 
+
+Through academic projects, I have worked with full-stack development, API-based workflows, database integration, code generation, and software engineering. I enjoy translating complex technical workflows into practical systems that are understandable, reliable, and useful for real users. 
+
+As a colleague, I am curious, structured, responsible, and motivated by learning from others while contributing with clear communication and positive energy.
+
+\headright{Education}
+
+\textit{MSc in Computer Science}, \textit{University of Copenhagen} \dates{Sep 2024 -- Jun 2026} 
+\begin{itemize}
+\item Built advanced competencies in software development, algorithms, computer systems, program analysis, user interface technology, machine learning, and collaborative technologies.
+\item Worked with programming concepts, performance-oriented systems thinking, static analysis, interface design, prototyping, and evaluation of user interface tools.
+\item Completed a thesis on an interactive web interface for the Fabrication Experiment Design Tool, combining frontend development, backend analysis, and code generation.
+\end{itemize}
+
+\is
+\textit{BSc in Computer Science}, \textit{University of Copenhagen} \dates{Sep 2021 -- Jun 2024} 
+\begin{itemize}
+\item Developed a strong foundation in algorithms and data structures, databases, software development, computer systems, programming languages, interaction design, and mathematical analysis.
+\item Worked with cloud-based app development, database integration, requirements, testing, and user-centred design through coursework and project work.
+\item Completed a bachelor project on a task list application for nursing home caregivers using DCR Graphs, combining workflow modelling, software engineering, and UX design.
+\end{itemize}
+
+\headright{Voluntary Experience}
+
+\textit{Tutor Volunteer}, \textit{University of Copenhagen} \dates{Aug 2024} \\[0.2em]
+\small Helped introduce new students to university life by organizing social activities and supporting their integration into the student community. Strengthened communication, facilitation, and collaboration skills in a student-facing role.
+
+\headright{Work Experience}
+
+\textit{Sales Assistant}, \textit{COOP} \dates{Sep 2020 -- Jan 2024} \\[0.2em]
+\small Assisted customers and handled daily store operations alongside university studies. Developed responsibility, service-minded communication, and the ability to explain practical issues clearly to different people.
+
+\headright{Interests}
+I enjoy board games, game design, and building small applications that solve everyday problems. I also like working on projects where software, usability, and practical workflows meet.
+
+\end{minipage}
+
+\newpage
+\newgeometry{left=16mm, right=16mm, top=15mm, bottom=15mm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+
+\headright{Selected Projects}
+
+\projectheading{Interactive Web Interface for FEDT}{MSc Thesis}
+\begin{itemize}
+\item \textbf{Purpose:} Made the Fabrication Experiment Design Tool easier to configure and understand through a visual web interface for experiment workflows.
+\item \textbf{Methods and technologies:} React, TypeScript, Blockly, FastAPI, Python code generation, and AST-based backend analysis.
+\item \textbf{Result:} Designed and implemented a configurable editor that connected visual blocks with executable Python specifications, helping reduce the need to work directly with complex code structures.
+\item \textbf{Relevant competencies:} Full-stack development, frontend/backend integration, code generation, structured debugging, documentation, and user-focused software design.
+\end{itemize}
+
+\is
+\projectheading{Task List Application for Nursing Home}{BSc Project}
+\begin{itemize}
+\item \textbf{Purpose:} Explored how a digital task list could support nursing home caregivers by making tasks, roles, and workflows easier to follow during daily care work.
+\item \textbf{Methods and technologies:} DCR Graphs, cloud-based development, database integration, workflow modelling, software engineering, and user experience design.
+\item \textbf{Result:} Developed a proof-of-concept application that translated care-related workflows into a structured digital tool with role-aware task handling.
+\item \textbf{Relevant competencies:} Requirements understanding, database-backed development, domain modelling, user-centred design, and communication with non-technical users.
+\end{itemize}
+\is
+\projectheading{Collaborative Technologies Project}{University Project}
+\begin{itemize}
+\item \textbf{Purpose:} Investigated how people coordinate work across physical and digital artefacts in hybrid collaborative settings.
+\item \textbf{Methods and technologies:} Qualitative observation, interviews, video-based analysis, prototyping, and interaction design methods.
+\item \textbf{Result:} Identified challenges around awareness, communication, and shared understanding between participants, and used these findings to inform prototype ideas.
+\item \textbf{Relevant competencies:} User research, problem framing, analysis of workflows, teamwork, and explaining complex interaction problems clearly.
+\end{itemize}
+
+\is
+\projectheading{Websites and Small Applications}{Personal Projects}
+\begin{itemize}
+\item \textbf{Purpose:} Built small tools and websites to practise software development and communicate projects in a clear and accessible way.
+\item \textbf{Methods and technologies:} React, TypeScript, HTML, CSS, Git, GitHub Pages, and iterative development.
+\item \textbf{Result:} Designed and developed a personal portfolio website and smaller web applications for personal and promotional use.
+\item \textbf{Relevant competencies:} Web development, UI structure, deployment, self-directed learning, and turning ideas into working prototypes.
+\end{itemize}
+
+\headright{Additional Technical Focus}
+\begin{itemize}
+\item \textbf{Software development:} Experience building applications where frontend, backend, data handling, and user workflows need to fit together.
+\item \textbf{User-centred systems:} Strong interest in making technical workflows easier to understand for real users, especially where usability and practical work processes matter.
+\item \textbf{Learning and adaptability:} Comfortable entering new codebases, learning unfamiliar technologies, asking clarifying questions, and improving solutions iteratively.
+\end{itemize}
+
+\end{document}
