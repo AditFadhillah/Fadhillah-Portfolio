@@ -10,15 +10,15 @@ export const AboutSection = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold"> Expert in Theories of Computer Science</h3>
+            <h3 className="text-2xl font-semibold">Software Developer with a User-Centred Approach</h3>
             <p className="text-muted-foreground">
-              With over 4 years of experience in software development, 
-              I have a strong foundation in computer science principles. 
+              I recently completed my MSc in Computer Science at the University of Copenhagen,
+              where I worked with software development, algorithms, computer systems,
+              UI technology, and program analysis.
             </p>
             <p>
-              My academic background as a Computer Science MSc student at 
-              Copenhagen University has equipped me with a deep understanding of algorithms, 
-              data structures, and software engineering practices.
+              I enjoy turning complex technical workflows into practical tools that are
+              understandable, reliable, and genuinely useful for real users.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -41,7 +41,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg"> Software Development </h4>
                   <p className="text-muted-foreground">
-                    Proficient in multiple programming languages and frameworks.
+                    Full-stack experience with React, TypeScript, Python, FastAPI,
+                    and backend analysis workflows.
                   </p>
                 </div>
               </div>
@@ -54,7 +55,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg"> UI/UX Design </h4>
                   <p className="text-muted-foreground">
-                    Passionate about creating user-friendly interfaces and experiences.
+                    Strong focus on interaction design and building interfaces that make
+                    complex systems easier to use.
                   </p>
                 </div>
               </div>
@@ -65,9 +67,10 @@ export const AboutSection = () => {
                   <Briefcase className="h-6 w-6 text-primary"/>
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Project Management </h4>
+                  <h4 className="font-semibold text-lg"> Collaboration and Delivery </h4>
                   <p className="text-muted-foreground">
-                    Experienced in collaborating in projects from ideas to completion using different methodologies.
+                    Comfortable collaborating across disciplines, documenting decisions,
+                    and iterating from prototype to working solution.
                   </p>
                 </div>
               </div>

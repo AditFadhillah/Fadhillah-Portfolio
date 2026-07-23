@@ -1,28 +1,35 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const skills = [
-    // programming languages
-  { name: "Python", level: 80, category: "language" },
-  { name: "C#", level: 75, category: "language" },
+  // programming languages
+  { name: "Python", level: 85, category: "language" },
+  { name: ".NET", level: 75, category: "language" },
+  { name: "Java", level: 72, category: "language" },
   { name: "F#", level: 70, category: "language" },
+  { name: "TypeScript", level: 80, category: "language" },
+  { name: "Haskell", level: 60, category: "language" },
 
   // frontend skills
-  { name: "HTML/CSS", level: 60, category: "frontend"},
-  { name: "JavaScript", level: 70, category: "frontend"},
-  { name: "React", level: 60, category: "frontend"},
-  { name: "Tailwind CSS", level: 60, category: "frontend"},
+  { name: "React", level: 82, category: "frontend" },
+  { name: "HTML", level: 85, category: "frontend" },
+  { name: "CSS", level: 80, category: "frontend" },
+  { name: "REST APIs", level: 78, category: "frontend" },
 
   // backend skills
-  { name: "postgreSQL", level: 70, category: "backend"},
-  { name: "Node.js", level: 50, category: "backend"},
-  { name: "DCRgraph", level: 80, category: "backend"},
+  { name: "FastAPI", level: 80, category: "backend" },
+  { name: "API Design", level: 78, category: "backend" },
+  { name: "Python Tooling", level: 76, category: "backend" },
+  { name: "Code Analysis", level: 78, category: "backend" },
+  { name: "MySQL", level: 72, category: "backend" },
 
   // tools
-  { name: "Git/GitHub", level: 80, category: "tools" },
-  { name: "VS Code", level: 90, category: "tools" },
-  { name: "Jupyter Notebook", level: 70, category: "tools" },
-  { name: "Microsoft Azure", level: 60, category: "tools" },
+  { name: "Git", level: 84, category: "tools" },
+  { name: "Testing and Debugging", level: 80, category: "tools" },
+  { name: "Azure", level: 70, category: "tools" },
+  { name: "Interaction Design", level: 75, category: "tools" },
+  { name: "DCR Graphs", level: 82, category: "tools" },
+  { name: "AST-based Analysis", level: 76, category: "tools" },
 ];
 
 const categories = ["all", "language", "frontend", "backend", "tools"];
@@ -43,7 +50,7 @@ export const SkillsSection = () => {
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category, key) => (
             <button 
-              key="{key}" 
+              key={key}
               onClick={() => setActiveCategory(category)}
               className={cn(
                 "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
@@ -61,22 +68,22 @@ export const SkillsSection = () => {
           {filteredSkills.map((skills, key) => (
             <div 
               key={key} 
-              className="bg-card p-6 rounded-g shadow-xs card-hover"
+              className="bg-card p-6 rounded-lg shadow-xs card-hover"
             >
               <div className="text-left mb-4">
-                <h3 classname="font-semibold text-lg">
+                <h3 className="font-semibold text-lg">
                   {skills.name}
                 </h3>
               </div>
               <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
                 <div 
-                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out"
+                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
                   style={{ width: skills.level + "%"}}
                 />
               </div>
 
               <div className="text-right mt-1">
-                <span classname="text-sm text-muted-foreground">{skills.level}%</span>
+                <span className="text-sm text-muted-foreground">{skills.level}%</span>
               </div>
             </div>
           ))}

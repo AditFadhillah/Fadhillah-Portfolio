@@ -5,7 +5,7 @@ export const HeroSection = () => {
     id="hero" 
     className="relative min-h-screen flex flex-col items-center justify-center px-4"
   >
-    <div className="container max-2-4xl mx-auto text-center z-10">
+    <div className="container max-w-4xl mx-auto text-center z-10">
       <div className="space-y-6">
         <img
             src="/Fadhillah-Portfolio/croppedCVimage.png"
@@ -24,9 +24,9 @@ export const HeroSection = () => {
           </span>
         </h1>
 
-        <p className="text-lg md-text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-          I am passionate about software development, problem-solving,
-          and innovative solutions.
+        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+          MSc in Computer Science graduate focused on full-stack development,
+          backend logic, and user-centred digital tools.
         </p>
 
         <div>
