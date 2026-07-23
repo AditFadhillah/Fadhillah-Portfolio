@@ -60,8 +60,12 @@ export const PukProject = () => {
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold">Hero Screenshot</h2>
-          <ScreenshotPlaceholder label="Full interface: game world on the left and Python editor on the right" />
+          <h2 className="text-2xl font-bold">- Screenshot</h2>
+          <img
+            src="/Fadhillah-Portfolio/images/puk-hero.png"
+            alt="PyMon hero interface"
+            className="w-full rounded-xl border border-border"
+          />
         </section>
 
         <section className="space-y-4">
