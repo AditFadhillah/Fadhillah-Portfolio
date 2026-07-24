@@ -56,13 +56,21 @@ export const PukProject = () => {
             >
               Source Code
             </a>
+            <a
+              href="/Fadhillah-Portfolio/pdfs/PUK___PyMon_v2.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cosmic-button"
+            >
+              Research PDF
+            </a>
           </div>
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold">- Screenshot</h2>
+          <h2 className="text-2xl font-bold"> </h2>
           <img
-            src="/Fadhillah-Portfolio/images/puk-hero.png"
+            src="/Fadhillah-Portfolio/images/puk/puk-hero.png"
             alt="PyMon hero interface"
             className="w-full rounded-xl border border-border"
           />
@@ -97,7 +105,11 @@ export const PukProject = () => {
               Exploration and programming happen together. Encountering Pokemon launches
               a coding challenge in the built-in editor, so students stay in flow.
             </p>
-            <ScreenshotPlaceholder label="Exploration mode screenshot" />
+            <img
+              src="/Fadhillah-Portfolio/images/puk/puk-encounter.png"
+              alt="PyMon encounter interface"
+              className="w-full rounded-xl border border-border"
+            />
           </div>
 
           <div className="space-y-3">
@@ -107,7 +119,11 @@ export const PukProject = () => {
               (dictionaries), Volcano (regular expressions), and Swamp (tuples and
               advanced structures).
             </p>
-            <ScreenshotPlaceholder label="Programming battle: task description, editor, output, Pokemon encounter" />
+            <img
+              src="/Fadhillah-Portfolio/images/puk/puk-tutorial.png"
+              alt="PyMon tutorial interface"
+              className="w-full rounded-xl border border-border"
+            />
           </div>
 
           <div className="space-y-3">
@@ -116,7 +132,11 @@ export const PukProject = () => {
               Progress is supported by collections, XP, achievements, login streaks,
               leaderboards, and team competition to encourage continued practice.
             </p>
-            <ScreenshotPlaceholder label="Achievement page / leaderboard / Pokemon collection" />
+            <img
+              src="/Fadhillah-Portfolio/images/puk/puk-scoring.png"
+              alt="PyMon scoring interface"
+              className="w-full rounded-xl border border-border"
+            />
           </div>
         </section>
 
@@ -127,7 +147,11 @@ export const PukProject = () => {
             Pyodide executes Python in-browser, and Supabase with PostgreSQL stores
             progress, achievements, and rankings.
           </p>
-          <ScreenshotPlaceholder label="Architecture diagram" />
+          <img
+            src="/Fadhillah-Portfolio/images/puk/puk-architecture.png"
+            alt="PyMon architecture diagram"
+            className="w-full rounded-xl border border-border"
+          />
         </section>
 
         <section className="space-y-4">
@@ -152,7 +176,16 @@ export const PukProject = () => {
             <li>Better context preservation between exploration and coding.</li>
             <li>Different mechanics motivated different student profiles.</li>
           </ul>
-          <ScreenshotPlaceholder label="Usage heatmap / session duration visualization" />
+          <img
+            src="/Fadhillah-Portfolio/images/puk/puk-session.png"
+            alt="PyMon session data visualization"
+            className="w-full rounded-xl border border-border"
+          />
+          <img
+            src="/Fadhillah-Portfolio/images/puk/puk-duration.png"
+            alt="PyMon sessionduration visualization"
+            className="w-full rounded-xl border border-border"
+          />
         </section>
       </div>
     </div>

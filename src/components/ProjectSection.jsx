@@ -12,6 +12,7 @@ const projects = [
     demoURL: null,
     gitURL: null,
     detailPath: null,
+    cardImage: null,
   },
   {
     id: 2,
@@ -21,17 +22,30 @@ const projects = [
     tags: ["DCR Graphs", "Database Integration", "Cloud App Development", "UX"],
     demoURL: null,
     gitURL: null,
-    detailPath: null,
+    detailPath: "/projects/bachelor",
+    cardImage: "/Fadhillah-Portfolio/images/bachelor/bach-hero.png",
   },
   {
     id: 3,
-    title: "PUK Project: Collaborative Technologies",
+    title: "PUK Project: PyMon",
     description:
-      "Investigated coordination across physical and digital artefacts in hybrid collaboration through observation, interviews, and prototyping.",
-    tags: ["Collaborative Technologies", "User Research", "Interaction Design", "Prototyping"],
+      "Built a serious-game learning platform where students solve Python challenges inside a Pokemon-inspired game world with integrated coding, progression, and feedback.",
+    tags: ["React", "TypeScript", "Godot", "Pyodide", "Supabase", "PostgreSQL"],
     demoURL: null,
     gitURL: null,
     detailPath: "/projects/puk",
+    cardImage: "/Fadhillah-Portfolio/images/puk/puk-hero.png",
+  },
+  {
+    id: 4,
+    title: "SECO Project: Godot Learning Platform Analysis",
+    description:
+      "Analyzed Godot as a software ecosystem and designed a browser-based learning platform concept to reduce tutorial fragmentation and improve onboarding.",
+    tags: ["SECO", "SRMA", "UX Research", "Stakeholder Mapping", "Figma"],
+    demoURL: null,
+    gitURL: null,
+    detailPath: "/projects/seco",
+    cardImage: "/Fadhillah-Portfolio/images/seco/seco-hero.png",
   },
 ];
 
@@ -53,6 +67,20 @@ export const ProjectSection = () => {
             const CardContent = (
               <>
                 <div className="h-2 bg-primary/60" />
+
+                <div className="px-6 pt-6">
+                  {project.cardImage ? (
+                    <img
+                      src={project.cardImage}
+                      alt={`${project.title} preview`}
+                      className="w-full h-44 object-cover rounded-lg border border-border"
+                    />
+                  ) : (
+                    <div className="w-full h-44 rounded-lg border-2 border-dashed border-primary/40 bg-background/40 flex items-center justify-center text-sm text-muted-foreground">
+                      Project image placeholder
+                    </div>
+                  )}
+                </div>
 
                 <div className='p-6'>
                   <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
