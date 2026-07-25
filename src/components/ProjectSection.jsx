@@ -11,8 +11,8 @@ const projects = [
     tags: ["React", "TypeScript", "Blockly", "FastAPI", "Python", "AST Analysis"],
     demoURL: null,
     gitURL: null,
-    detailPath: null,
-    cardImage: null,
+    detailPath: "/projects/master",
+    cardImage: "/Fadhillah-Portfolio/images/master/master-hero.png",
   },
   {
     id: 2,
