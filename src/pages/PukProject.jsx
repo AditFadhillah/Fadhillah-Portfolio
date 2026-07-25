@@ -1,5 +1,7 @@
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import { ProjectImage } from "../components/ProjectImage";
+import { ThemeToggle } from "../components/ThemeToggle";
 
 const ScreenshotPlaceholder = ({ label }) => {
   return (
@@ -16,6 +18,7 @@ const ScreenshotPlaceholder = ({ label }) => {
 export const PukProject = () => {
   return (
     <div className="min-h-screen bg-background text-foreground px-4 py-12">
+      <ThemeToggle />
       <div className="container max-w-4xl mx-auto space-y-12 text-left">
         <Link
           to="/"
@@ -35,7 +38,7 @@ export const PukProject = () => {
           <p className="text-xl text-muted-foreground">
             A Serious-Game Platform for Learning Python Programming
           </p>
-          <p className="text-muted-foreground">
+          <p className="text-primary">
             React, TypeScript, Godot, Pyodide, Supabase, PostgreSQL
           </p>
 
@@ -69,10 +72,10 @@ export const PukProject = () => {
 
         <section className="space-y-4">
           <h2 className="text-2xl font-bold"> </h2>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/puk/puk-hero.png"
-            alt="PyMon hero interface"
-            className="w-full rounded-xl border border-border"
+            alt="Game interface"
+            className="block w-2/3 mx-auto rounded-xl border border-border"
           />
         </section>
 
@@ -105,9 +108,9 @@ export const PukProject = () => {
               Exploration and programming happen together. Encountering Pokemon launches
               a coding challenge in the built-in editor, so students stay in flow.
             </p>
-            <img
+            <ProjectImage
               src="/Fadhillah-Portfolio/images/puk/puk-encounter.png"
-              alt="PyMon encounter interface"
+              alt="Encounter interface"
               className="w-full rounded-xl border border-border"
             />
           </div>
@@ -119,10 +122,10 @@ export const PukProject = () => {
               (dictionaries), Volcano (regular expressions), and Swamp (tuples and
               advanced structures).
             </p>
-            <img
+            <ProjectImage
               src="/Fadhillah-Portfolio/images/puk/puk-tutorial.png"
-              alt="PyMon tutorial interface"
-              className="w-full rounded-xl border border-border"
+              alt="Tutorial interface"
+              className="block w-4/5 mx-auto rounded-xl border border-border"
             />
           </div>
 
@@ -132,9 +135,9 @@ export const PukProject = () => {
               Progress is supported by collections, XP, achievements, login streaks,
               leaderboards, and team competition to encourage continued practice.
             </p>
-            <img
+            <ProjectImage
               src="/Fadhillah-Portfolio/images/puk/puk-scoring.png"
-              alt="PyMon scoring interface"
+              alt="Scoring interface"
               className="w-full rounded-xl border border-border"
             />
           </div>
@@ -147,10 +150,10 @@ export const PukProject = () => {
             Pyodide executes Python in-browser, and Supabase with PostgreSQL stores
             progress, achievements, and rankings.
           </p>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/puk/puk-architecture.png"
-            alt="PyMon architecture diagram"
-            className="w-full rounded-xl border border-border"
+            alt="Architecture diagram"
+            className="block w-4/5 mx-auto rounded-xl border border-border"
           />
         </section>
 
@@ -176,14 +179,14 @@ export const PukProject = () => {
             <li>Better context preservation between exploration and coding.</li>
             <li>Different mechanics motivated different student profiles.</li>
           </ul>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/puk/puk-session.png"
-            alt="PyMon session data visualization"
+            alt="Session data visualization"
             className="w-full rounded-xl border border-border"
           />
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/puk/puk-duration.png"
-            alt="PyMon sessionduration visualization"
+            alt="Session duration visualization"
             className="w-full rounded-xl border border-border"
           />
         </section>

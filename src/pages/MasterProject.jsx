@@ -1,5 +1,7 @@
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import { ProjectImage } from "../components/ProjectImage";
+import { ThemeToggle } from "../components/ThemeToggle";
 
 const ScreenshotPlaceholder = ({ label }) => {
   return (
@@ -20,6 +22,7 @@ const SectionTitle = ({ children }) => (
 export const MasterProject = () => {
   return (
     <div className="min-h-screen bg-background text-foreground px-4 py-12">
+      <ThemeToggle />
       <div className="container max-w-4xl mx-auto space-y-12 text-left">
         <Link
           to="/"
@@ -42,7 +45,7 @@ export const MasterProject = () => {
           <p className="text-muted-foreground">
             Department of Computer Science, 2026 · Advisor: Valkyrie Savage
           </p>
-          <p className="text-muted-foreground">
+          <p className="text-primary">
             React, TypeScript, Blockly, FastAPI, Python, AST Analysis, Server-Sent Events
           </p>
 
@@ -85,9 +88,9 @@ export const MasterProject = () => {
             and published fabrication papers. All generated programs ran in FEDT with
             zero manual code edits.
           </p>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/master/master-hero.png"
-            alt="Master project hero screenshot"
+            alt="Hero screenshot"
             className="w-full rounded-xl border border-border"
           />
         </section>
@@ -128,14 +131,14 @@ export const MasterProject = () => {
             <li>Fabricate: geometry creation and machine actions using factor values.</li>
             <li>Measure: data collection, logging, and batch measurement templates.</li>
           </ul>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/master/master-3section.png"
-            alt="Master project three-section scaffold screenshot"
-            className="w-full rounded-xl border border-border"
+            alt="Three-section scaffold screenshot"
+            className="block w-3/4 mx-auto rounded-xl border border-border"
           />
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/master/master-3sectionexample.png"
-            alt="Master project three-section scaffold example screenshot"
+            alt="Three-section scaffold example screenshot"
             className="w-full rounded-xl border border-border"
           />
         </section>
@@ -163,9 +166,9 @@ export const MasterProject = () => {
             I evaluated the system from two views: visual representation quality
             and API translation correctness.
           </p>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/master/master-architecture.png"
-            alt="Master project system architecture diagram"
+            alt="System architecture diagram"
             className="w-full rounded-xl border border-border"
           />
         </section>
@@ -178,14 +181,14 @@ export const MasterProject = () => {
             and Programming Utilities. Device-specific blocks hide FEDT API details
             behind typed fields and dropdowns.
           </p>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/master/master-category.png"
-            alt="Master project block palette with categories and color coding"
-            className="w-full rounded-xl border border-border"
+            alt="Block palette with categories and color coding"
+            className="w-3/4 mx-auto rounded-xl border border-border"
           />
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/master/master-circwood.png"
-            alt="Master project block example: circwood experiment"
+            alt="Block example: circwood experiment"
             className="w-full rounded-xl border border-border"
           />
 
@@ -214,10 +217,10 @@ def test_simple_laser_cut():
             The approach scales to large designs, including a validated 2,448-row
             design table case.
           </p>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/master/master-table.png"
-            alt="Master project generated design table and measurement table"
-            className="w-full rounded-xl border border-border"
+            alt="Generated design table and measurement table"
+            className="w-3/4 rounded-xl mx-auto border border-border"
           />
 
           <h3 className="text-xl font-semibold">4. Evaluate and Execute modes</h3>
@@ -226,8 +229,16 @@ def test_simple_laser_cut():
             human-in-the-loop prompts. Input requests are streamed to the UI using SSE,
             where users can continue or stop at each instruction step.
           </p>
-          <ScreenshotPlaceholder label="Action Required modal during execution" />
-          <ScreenshotPlaceholder label="Flowchart tab for one run" />
+          <ProjectImage
+            src="/Fadhillah-Portfolio/images/master/master-userinput.png"
+            alt="User input during execution"
+            className="block w-1/2 mx-auto rounded-xl border border-border"
+          />
+          <ProjectImage
+            src="/Fadhillah-Portfolio/images/master/master-flowchart.png"
+            alt="System flowchart"
+            className="block w-full mx-auto rounded-xl border border-border"
+          />
 
           <h3 className="text-xl font-semibold">5. Unified experiment state</h3>
           <p className="text-muted-foreground leading-relaxed">
@@ -240,7 +251,11 @@ def test_simple_laser_cut():
             Workspace state can be saved and restored as Blockly XML, including layout.
             Geometry uploads and output files are managed in dedicated panels.
           </p>
-          <ScreenshotPlaceholder label="Saved Experiments panel and Geometry Files panel" />
+          <ProjectImage
+            src="/Fadhillah-Portfolio/images/master/master-save.png"
+            alt="System flowchart"
+            className="block w-full mx-auto rounded-xl border border-border"
+          />
         </section>
 
         <section className="space-y-4">
@@ -256,8 +271,16 @@ def test_simple_laser_cut():
             <li>One case reached 2,448 planned runs.</li>
             <li>All 22 generated programs ran in FEDT with zero manual edits.</li>
           </ul>
-          <ScreenshotPlaceholder label="Flowchart comparison: generated vs hand-written FEDT" />
-          <ScreenshotPlaceholder label="Validation summary table for all 22 experiments" />
+          <ProjectImage
+            src="/Fadhillah-Portfolio/images/master/master-comparison.png"
+            alt="Comparison of generated vs hand-written FEDT"
+            className="block w-3/4 mx-auto rounded-xl border border-border"
+          />
+          <ProjectImage
+            src="/Fadhillah-Portfolio/images/master/master-summary.png"
+            alt="Validation summary table"
+            className="block w-full mx-auto rounded-xl border border-border"
+          />
         </section>
 
         <section className="space-y-4">
@@ -271,7 +294,6 @@ def test_simple_laser_cut():
             <li>Systematic counterbalancing methods like Latin-square are not yet supported.</li>
             <li>Some generator translation gaps remain for list-indexed expressions.</li>
           </ul>
-          <ScreenshotPlaceholder label="Paint Layers boundary case in Blockly" />
         </section>
 
         <section className="space-y-4">
@@ -282,8 +304,11 @@ def test_simple_laser_cut():
             fabrication workflows. This directly informed the three-section scaffold,
             explicit instruction prompts, and the need for visible feedback panels.
           </p>
-          <ScreenshotPlaceholder label="Paper prototype photo" />
-          <ScreenshotPlaceholder label="Early wireframe sketch" />
+          <ProjectImage
+            src="/Fadhillah-Portfolio/images/master/master-prototype.png"
+            alt="Paper prototype"
+            className="block w-3/4 mx-auto rounded-xl border border-border"
+          />
         </section>
 
         <section className="space-y-4">

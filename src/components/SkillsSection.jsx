@@ -2,34 +2,39 @@ import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const skills = [
-  // programming languages
-  { name: "Python", level: 85, category: "language" },
-  { name: ".NET", level: 75, category: "language" },
-  { name: "Java", level: 72, category: "language" },
-  { name: "F#", level: 70, category: "language" },
+  // programming languages used in projects
+  { name: "Python", level: 90, category: "language" },
   { name: "TypeScript", level: 80, category: "language" },
-  { name: "Haskell", level: 60, category: "language" },
+  { name: "Java", level: 70, category: "language" },
+  { name: "F#", level: 65, category: "language" },
+  { name: "GDScript", level: 70, category: "language" },
 
   // frontend skills
-  { name: "React", level: 82, category: "frontend" },
+  { name: "React", level: 85, category: "frontend" },
+  { name: "Google Blockly", level: 80, category: "frontend" },
   { name: "HTML", level: 85, category: "frontend" },
-  { name: "CSS", level: 80, category: "frontend" },
-  { name: "REST APIs", level: 78, category: "frontend" },
+  { name: "CSS/Tailwind", level: 80, category: "frontend" },
+  { name: "Figma Prototyping", level: 75, category: "frontend" },
 
-  // backend skills
+  // backend and data skills
   { name: "FastAPI", level: 80, category: "backend" },
-  { name: "API Design", level: 78, category: "backend" },
-  { name: "Python Tooling", level: 76, category: "backend" },
-  { name: "Code Analysis", level: 78, category: "backend" },
-  { name: "MySQL", level: 72, category: "backend" },
+  { name: "REST API Design", level: 80, category: "backend" },
+  { name: "AI / Machine Learning", level: 75, category: "backend" },
+  { name: "Pyodide Integration", level: 70, category: "backend" },
+  { name: "PostgreSQL", level: 75, category: "backend" },
+  { name: "MySQL", level: 75, category: "backend" },
+  { name: "Supabase", level: 75, category: "backend" },
+  { name: "AST-based Static Analysis", level: 80, category: "backend" },
 
-  // tools
-  { name: "Git", level: 84, category: "tools" },
+  // tools and methods
+  { name: "Git", level: 85, category: "tools" },
   { name: "Testing and Debugging", level: 80, category: "tools" },
+  { name: "Agentic Coding Workflows", level: 75, category: "tools" },
   { name: "Azure", level: 70, category: "tools" },
-  { name: "Interaction Design", level: 75, category: "tools" },
-  { name: "DCR Graphs", level: 82, category: "tools" },
-  { name: "AST-based Analysis", level: 76, category: "tools" },
+  { name: "DCR Graph Modeling", level: 85, category: "tools" },
+  { name: "Godot", level: 75, category: "tools" },
+  { name: "SECO Analysis", level: 80, category: "tools" },
+  { name: "User Research and Interaction Design", level: 80, category: "tools" },
 ];
 
 const categories = ["all", "language", "frontend", "backend", "tools"];

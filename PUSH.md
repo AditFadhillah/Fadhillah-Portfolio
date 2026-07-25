@@ -5,5 +5,5 @@ git push origin main
 
 
 git add .
-git commit -m "Your message"
+git commit -m "Added Master project card and add stuff for the skill section"
 git push origin main
