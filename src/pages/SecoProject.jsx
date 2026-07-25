@@ -1,5 +1,7 @@
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import { ProjectImage } from "../components/ProjectImage";
+import { ThemeToggle } from "../components/ThemeToggle";
 
 const ScreenshotPlaceholder = ({ label }) => {
   return (
@@ -16,6 +18,7 @@ const ScreenshotPlaceholder = ({ label }) => {
 export const SecoProject = () => {
   return (
     <div className="min-h-screen bg-background text-foreground px-4 py-12">
+      <ThemeToggle />
       <div className="container max-w-4xl mx-auto space-y-12 text-left">
         <Link
           to="/"
@@ -35,7 +38,7 @@ export const SecoProject = () => {
           <p className="text-xl text-muted-foreground">
             A Software Ecosystem Analysis and UX Design Case Study
           </p>
-          <p className="text-muted-foreground">
+          <p className="text-primary">
             SECO Analysis, SRMA, Stakeholder Mapping, User Research, Business Modelling, Figma
           </p>
 
@@ -53,9 +56,9 @@ export const SecoProject = () => {
 
         <section className="space-y-4">
           <h2 className="text-2xl font-bold"> </h2>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/seco/seco-hero.png"
-            alt="SECO project hero screenshot"
+            alt="Godot Learning Platform concept"
             className="w-full rounded-xl border border-border"
           />
         </section>
@@ -88,10 +91,10 @@ export const SecoProject = () => {
             <li>Business Model Canvas and multisided value proposition analysis.</li>
             <li>End-user development theory and learning complexity progression.</li>
           </ul>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/seco/seco-stakeholder.png"
-            alt="SECO project stakeholder overview"
-            className="w-full rounded-xl border border-border"
+            alt="Stakeholder overview"
+            className="block w-4/5 mx-auto rounded-xl border border-border"
           />
         </section>
 
@@ -102,10 +105,10 @@ export const SecoProject = () => {
             node and scene composition, signal-based loose coupling, and extension model
             through GDScript, C#/.NET, and GDExtension/C++.
           </p>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/seco/seco-godotArchitecture.png"
-            alt="SECO project Godot architecture overview"
-            className="w-full rounded-xl border border-border"
+            alt="Godot architecture overview"
+            className="block w-4/5 mx-auto rounded-xl border border-border"
           />
         </section>
 
@@ -116,15 +119,15 @@ export const SecoProject = () => {
             (intermediate), and Emma (advanced, Unity-switcher). The design focus was
             Tina using a design-for-one, validate-for-many strategy.
           </p>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/seco/seco-persona.png"
-            alt="SECO project personas overview"
+            alt="Personas overview"
             className="w-full rounded-xl border border-border"
           />
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/seco/seco-beginnerMap.png"
-            alt="SECO project beginner learning journey overview"
-            className="w-full rounded-xl border border-border"
+            alt="Beginner learning journey overview"
+            className="block w-4/5 mx-auto rounded-xl border border-border"
           />
         </section>
 
@@ -136,9 +139,9 @@ export const SecoProject = () => {
             <li>Embedded YouTube tutorials and in-page Godot Web Editor workflows.</li>
             <li>Progress tracking, ratings, and reviews backed by Supabase and PostgreSQL.</li>
           </ul>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/seco/seco-proposedArchitecture.png"
-            alt="SECO project proposed architecture"
+            alt="Proposed architecture"
             className="w-full rounded-xl border border-border"
           />
         </section>
@@ -149,19 +152,19 @@ export const SecoProject = () => {
             The design moved from whiteboard sketches to high-fidelity interactive Figma
             wireframes focused on first-time beginner experience.
           </p>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/seco/seco-whiteboard.png"
-            alt="SECO project whiteboard sketch"
-            className="w-full rounded-xl border border-border"
+            alt="Whiteboard sketch"
+            className="block w-4/5 mx-auto rounded-xl border border-border"
           />
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/seco/seco-figma1.png"
-            alt="SECO project Figma wireframe"
+            alt="Figma wireframe"
             className="w-full rounded-xl border border-border"
           />
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/seco/seco-figma2.png"
-            alt="SECO project Figma search"
+            alt="Figma search"
             className="w-full rounded-xl border border-border"
           />
         </section>
@@ -172,9 +175,9 @@ export const SecoProject = () => {
             The concept curates Godot learning resources into level-matched pathways,
             supported by collaboration with established creators and community promotion.
           </p>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/seco/seco-businessModel.png"
-            alt="SECO project business model canvas"
+            alt="Business model canvas"
             className="w-full rounded-xl border border-border"
           />
         </section>

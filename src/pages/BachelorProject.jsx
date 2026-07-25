@@ -1,5 +1,7 @@
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import { ProjectImage } from "../components/ProjectImage";
+import { ThemeToggle } from "../components/ThemeToggle";
 
 const ScreenshotPlaceholder = ({ label }) => {
   return (
@@ -16,6 +18,7 @@ const ScreenshotPlaceholder = ({ label }) => {
 export const BachelorProject = () => {
   return (
     <div className="min-h-screen bg-background text-foreground px-4 py-12">
+      <ThemeToggle />
       <div className="container max-w-4xl mx-auto space-y-12 text-left">
         <Link
           to="/"
@@ -35,7 +38,7 @@ export const BachelorProject = () => {
           <p className="text-xl text-muted-foreground">
             Process-aware mHealth system powered by DCR Graphs
           </p>
-          <p className="text-muted-foreground">
+          <p className="text-primary">
             Python, Kivy, DCR Designer, DCR Active Repository, MySQL, Azure
           </p>
 
@@ -53,10 +56,10 @@ export const BachelorProject = () => {
 
         <section className="space-y-4">
           <h2 className="text-2xl font-bold"> </h2>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/bachelor/bach-hero.png"
-            alt="Bachelor project hero screenshot"
-            className="w-full rounded-xl border border-border"
+            alt="DCR Graphs interface"
+            className="block w-full mx-auto rounded-xl border border-border"
           />
         </section>
 
@@ -88,25 +91,25 @@ export const BachelorProject = () => {
             <li>Real-time updates to reduce duplicate or conflicting actions.</li>
             <li>Admin controls for shift management and GDPR-compliant user removal.</li>
           </ul>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/bachelor/bach-login.png"
-            alt="Bachelor project login screenshot"
-            className="w-full rounded-xl border border-border"
+            alt="Login screenshot"
+            className="block w-4/5 mx-auto rounded-xl border border-border"
           />
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/bachelor/bach-resident.png"
-            alt="Bachelor project resident screenshot"
-            className="w-full rounded-xl border border-border"
+            alt="Resident screenshot"
+            className="block w-4/5 mx-auto rounded-xl border border-border"
           />
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/bachelor/bach-notes.png"
-            alt="Bachelor project notes screenshot"
-            className="w-full rounded-xl border border-border"
+            alt="Notes screenshot"
+            className="block w-4/5 mx-auto rounded-xl border border-border"
           />
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/bachelor/bach-admin.png"
-            alt="Bachelor project admin screenshot"
-            className="w-full rounded-xl border border-border"
+            alt="Admin screenshot"
+            className="block w-4/5 mx-auto rounded-xl border border-border"
           />
         </section>
 
@@ -118,9 +121,9 @@ export const BachelorProject = () => {
             executed through DCR Active Repository via REST APIs to fetch enabled tasks,
             complete tasks, and manage notes.
           </p>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/bachelor/bach-dcr.png"
-            alt="Bachelor project DCR graph"
+            alt="DCR graph of a resident's workflow"
             className="w-full rounded-xl border border-border"
           />
         </section>
@@ -133,10 +136,10 @@ export const BachelorProject = () => {
             <li>Database: MySQL on Microsoft Azure.</li>
             <li>Live synchronization using scheduled polling for tasks and notes.</li>
           </ul>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/bachelor/bach-architecture.png"
-            alt="Bachelor project architecture diagram"
-            className="w-full rounded-xl border border-border"
+            alt="Architecture diagram"
+            className="block w-4/5 mx-auto rounded-xl border border-border"
           />
         </section>
 
@@ -150,10 +153,10 @@ export const BachelorProject = () => {
             <li>Executed unit and exploratory testing to validate multi-user behavior.</li>
             <li>Documented SWOT and security considerations for future iterations.</li>
           </ul>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/bachelor/bach-participatory.png"
-            alt="Bachelor project participatory design artifact"
-            className="w-full rounded-xl border border-border"
+            alt="Participatory design artifact"
+            className="block w-4/5 mx-auto rounded-xl border border-border"
           />
         </section>
 
@@ -173,10 +176,10 @@ export const BachelorProject = () => {
             management, improving shift-specific execution and documentation clarity while
             highlighting future needs in performance, visual polish, and data security.
           </p>
-          <img
+          <ProjectImage
             src="/Fadhillah-Portfolio/images/bachelor/bach-align.png"
-            alt="Bachelor project alignment diagram"
-            className="w-full rounded-xl border border-border"
+            alt="Alignment diagram"
+            className="block w-4/5 mx-auto rounded-xl border border-border"
           />
         </section>
 
