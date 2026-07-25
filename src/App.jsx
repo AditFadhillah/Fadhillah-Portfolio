@@ -5,6 +5,7 @@ import { NotFound } from "./pages/NotFound";
 import { PukProject } from "./pages/PukProject";
 import { SecoProject } from "./pages/SecoProject";
 import { BachelorProject } from "./pages/BachelorProject";
+import { MasterProject } from "./pages/MasterProject";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -23,6 +24,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route index element={<Home />} />
+          <Route path="projects/master" element={<MasterProject />} />
           <Route path="projects/bachelor" element={<BachelorProject />} />
           <Route path="projects/puk" element={<PukProject />} />
           <Route path="projects/seco" element={<SecoProject />} />
