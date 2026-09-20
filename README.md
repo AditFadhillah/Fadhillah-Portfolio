@@ -1,6 +1,6 @@
 # Fadhillah Portfolio
 
-Personal portfolio website for Aditya Fadhillah, built with React and Vite. It showcases an about section, skills, selected projects (including bachelor and master's projects), and a contact section, and is deployed to GitHub Pages.
+Personal portfolio website for myself, built with React and Vite. It showcases an about section, skills, selected projects (including bachelor and master's projects), and a contact section, and is deployed to GitHub Pages.
 
 ## Tech stack
 
