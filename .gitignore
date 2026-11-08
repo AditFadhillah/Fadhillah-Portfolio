@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Personal job-search documents (kept locally, not in the public repo)
+relevants/
