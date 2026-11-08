@@ -47,6 +47,17 @@ const projects = [
     detailPath: "/projects/seco",
     cardImage: "/Fadhillah-Portfolio/images/seco/seco-hero.png",
   },
+  {
+    id: 5,
+    title: "Party Games",
+    description:
+      "A collection of quick, local multiplayer mini-games in one .NET MAUI app, built with MVVM and dependency injection.",
+    tags: [".NET MAUI", "C#", "XAML", "MVVM", "Dependency Injection"],
+    demoURL: null,
+    gitURL: null,
+    detailPath: "/projects/party-games",
+    cardImage: null,
+  },
 ];
 
 export const ProjectSection = () => {
