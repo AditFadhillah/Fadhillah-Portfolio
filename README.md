@@ -20,7 +20,8 @@ The pipeline is defined in [deploy.yml](.github/workflows/deploy.yml) and has tw
 
 | Job | Runs on | What it does |
 |-----|---------|--------------|
-| `build` | every push to `main` and every pull request | Installs dependencies with `npm ci`, runs `npm run build`, and uploads `dist/` as the Pages artifact |
+| `lint` | every push to `main` and every pull request | Installs dependencies with `npm ci` and runs `npm run lint` |
+| `build` | every push to `main` and every pull request, after `lint` succeeds | Installs dependencies with `npm ci`, runs `npm run build`, and uploads `dist/` as the Pages artifact |
 | `deploy` | only pushes to `main`, after `build` succeeds | Publishes the uploaded artifact to GitHub Pages |
 
 **Before vs. now:** previously, the site was deployed with a manual `npm run deploy` script (using the `gh-pages` package) that you ran from your own machine. Now GitHub Actions does the build and deploy on its own, from a clean environment, every time you push. The manual script was removed.
