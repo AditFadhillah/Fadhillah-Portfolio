@@ -9,6 +9,31 @@ Personal portfolio website for myself, built with React and Vite. It showcases a
 - Tailwind CSS for styling
 - Radix UI and lucide-react for UI components and icons
 
+## CI/CD
+
+CI/CD stands for **Continuous Integration** and **Continuous Deployment**. It means that every change pushed to the repository is automatically checked and published, instead of being built and uploaded by hand.
+
+- **Continuous Integration (CI):** on every push and pull request, GitHub Actions installs the dependencies and builds the site. If the build breaks, you find out before the change reaches the live site.
+- **Continuous Deployment (CD):** when a push lands on `main` and the build succeeds, the built files in `dist/` are published to GitHub Pages automatically.
+
+The pipeline is defined in [deploy.yml](.github/workflows/deploy.yml) and has two jobs:
+
+| Job | Runs on | What it does |
+|-----|---------|--------------|
+| `build` | every push to `main` and every pull request | Installs dependencies with `npm ci`, runs `npm run build`, and uploads `dist/` as the Pages artifact |
+| `deploy` | only pushes to `main`, after `build` succeeds | Publishes the uploaded artifact to GitHub Pages |
+
+**Before vs. now:** previously, the site was deployed with a manual `npm run deploy` script (using the `gh-pages` package) that you ran from your own machine. Now GitHub Actions does the build and deploy on its own, from a clean environment, every time you push. The manual script was removed.
+
+**Day-to-day workflow:**
+
+1. Make a change locally and check it with `npm run dev`.
+2. Commit and push to `main`.
+3. Open the **Actions** tab on GitHub to watch the `build` and `deploy` jobs.
+4. When the deploy job is green, the live site is updated.
+
+Pull requests only run the `build` job, so you can check that a change builds before merging it.
+
 ## Development
 
 This project uses two official Vite plugins for React, providing HMR and ESLint rules:
