@@ -144,7 +144,7 @@ export const PartyGamesProject = () => {
               Includes interactive game flows, score tracking, and animations.
             </li>
           </ul>
-        </section>
+        </section> 
 
         <section className="space-y-4 rounded-xl border border-primary/30 bg-primary/5 p-6">
           <h2 className="text-2xl font-bold">Project Status</h2>
