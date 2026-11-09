@@ -30,11 +30,10 @@ The pipeline is defined in [deploy.yml](.github/workflows/deploy.yml) and has fo
 **Day-to-day workflow:**
 
 1. Make a change locally and check it with `npm run dev`. Run `npm test` to check the pages still render.
-2. Commit and push to `main`.
-3. Open the **Actions** tab on GitHub to watch the `lint`, `test`, `build` and `deploy` jobs.
-4. When the deploy job is green, the live site is updated. If `test` fails, `build` and `deploy` are skipped, so the broken version is not published.
-
-Pull requests run the `lint`, `test` and `build` jobs, so you can check a change before merging it.
+2. Create a branch, commit, and push it: `git switch -c feature/my-change`, then `git push -u origin feature/my-change`.
+3. Open a pull request into `main` on GitHub. The `lint`, `test` and `build` jobs run on it.
+4. Merge the pull request once those checks pass. `main` is protected, so direct pushes are blocked and every change goes through a PR.
+5. The merge to `main` runs the pipeline again, including `deploy`. When the deploy job is green, the live site is updated. If `test` fails, `build` and `deploy` are skipped, so the broken version is not published.
 
 ## Development
 
