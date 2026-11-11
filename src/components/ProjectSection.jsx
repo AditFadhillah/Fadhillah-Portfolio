@@ -58,6 +58,17 @@ const projects = [
     detailPath: "/projects/party-games",
     cardImage: null,
   },
+  {
+    id: 6,
+    title: "Chibot: Private Local AI Chat Assistant",
+    description:
+      "A chat web app that talks to a language model running on my own laptop through Ollama, served by a secured FastAPI backend and reachable from anywhere through Tailscale.",
+    tags: ["React", "Vite", "Python", "FastAPI", "LangChain", "Ollama", "Tailscale"],
+    demoURL: "https://aditfadhillah.github.io/Local-AI-Model-Chibot-/",
+    gitURL: "https://github.com/AditFadhillah/Local-AI-Model-Chibot-/",
+    detailPath: "/projects/chibot",
+    cardImage: null,
+  },
 ];
 
 export const ProjectSection = () => {

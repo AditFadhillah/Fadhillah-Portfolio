@@ -9,6 +9,7 @@ import { BachelorProject } from "../pages/BachelorProject";
 import { PukProject } from "../pages/PukProject";
 import { SecoProject } from "../pages/SecoProject";
 import { PartyGamesProject } from "../pages/PartyGamesProject";
+import { ChibotProject } from "../pages/ChibotProject";
 
 const pages = [
   ["Home", Home],
@@ -17,6 +18,7 @@ const pages = [
   ["PUK project", PukProject],
   ["SECO project", SecoProject],
   ["Party Games project", PartyGamesProject],
+  ["Chibot project", ChibotProject],
   ["Not found", NotFound],
 ];
 

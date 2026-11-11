@@ -7,6 +7,7 @@ import { SecoProject } from "./pages/SecoProject";
 import { BachelorProject } from "./pages/BachelorProject";
 import { MasterProject } from "./pages/MasterProject";
 import { PartyGamesProject } from "./pages/PartyGamesProject";
+import { ChibotProject } from "./pages/ChibotProject";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -30,6 +31,7 @@ function App() {
           <Route path="projects/puk" element={<PukProject />} />
           <Route path="projects/seco" element={<SecoProject />} />
           <Route path="projects/party-games" element={<PartyGamesProject />} />
+          <Route path="projects/chibot" element={<ChibotProject />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
