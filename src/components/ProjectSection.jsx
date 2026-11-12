@@ -56,7 +56,8 @@ const projects = [
     demoURL: null,
     gitURL: null,
     detailPath: "/projects/party-games",
-    cardImage: null,
+    cardImage: "/Fadhillah-Portfolio/images/partygames/MainMenu.png",
+    imageClassName: "object-contain p-4",
   },
   {
     id: 6,
@@ -67,7 +68,8 @@ const projects = [
     demoURL: "https://aditfadhillah.github.io/Local-AI-Model-Chibot-/",
     gitURL: "https://github.com/AditFadhillah/Local-AI-Model-Chibot-/",
     detailPath: "/projects/chibot",
-    cardImage: null,
+    cardImage: "/Fadhillah-Portfolio/images/chibot/chibot_icon.png",
+    imageClassName: "object-contain p-1",
   },
 ];
 
@@ -95,7 +97,7 @@ export const ProjectSection = () => {
                     <img
                       src={project.cardImage}
                       alt={`${project.title} preview`}
-                      className="w-full h-44 object-cover rounded-lg border border-border"
+                      className={`w-full h-44 rounded-lg border border-border ${project.imageClassName ?? "object-cover"}`}
                     />
                   ) : (
                     <div className="w-full h-44 rounded-lg border-2 border-dashed border-primary/40 bg-background/40 flex items-center justify-center text-sm text-muted-foreground">

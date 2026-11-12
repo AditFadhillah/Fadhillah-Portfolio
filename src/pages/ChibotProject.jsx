@@ -62,7 +62,7 @@ export const ChibotProject = () => {
         </section>
 
         <section className="space-y-4">
-          <ScreenshotPlaceholder label="Hero: Chibot chat interface" />
+          <img src="/Fadhillah-Portfolio/images/chibot/Chibot_show1.png" alt="Chibot chat interface" />
         </section>
 
         <section className="space-y-4">
@@ -95,7 +95,7 @@ export const ChibotProject = () => {
               streams responses from Ollama through LangChain to the browser, so long
               replies show progress straight away.
             </p>
-            <ScreenshotPlaceholder label="Streaming response in progress" />
+            {/* <ScreenshotPlaceholder label="Streaming response in progress" /> */}
           </div>
 
           <div className="space-y-3">
@@ -105,7 +105,7 @@ export const ChibotProject = () => {
               in browser local storage, so they survive a page refresh. Markdown and code
               blocks are rendered with syntax highlighting.
             </p>
-            <ScreenshotPlaceholder label="Model selector and formatted code reply" />
+            <img src="/Fadhillah-Portfolio/images/chibot/Chibot_show2.png" alt="Chibot chat interface" />
           </div>
 
           <div className="space-y-3">
@@ -115,7 +115,7 @@ export const ChibotProject = () => {
               key, CORS limits, per-IP rate limiting, input size limits, and a cap on
               output tokens. Health and status endpoints show whether Ollama is running.
             </p>
-            <ScreenshotPlaceholder label="Health and status check" />
+            {/* <ScreenshotPlaceholder label="Health and status check" /> */}
           </div>
         </section>
 
@@ -128,7 +128,7 @@ export const ChibotProject = () => {
             locally. Each request is logged with a request ID, and the chat outcome is
             recorded in a log file.
           </p>
-          <ScreenshotPlaceholder label="Architecture diagram: GitHub Pages, Tailscale Funnel, FastAPI, Ollama" />
+          <img src="/Fadhillah-Portfolio/images/chibot/Architecture_diagram.png" alt="Chibot architecture diagram" />
         </section>
 
         <section className="space-y-4">

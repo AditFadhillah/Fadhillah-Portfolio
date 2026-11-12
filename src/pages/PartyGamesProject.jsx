@@ -5,31 +5,37 @@ import { ThemeToggle } from "../components/ThemeToggle";
 const games = [
   {
     name: "Dice Roller",
+    image: "/Fadhillah-Portfolio/images/partygames/DiceRoller.png",
     description:
       "Roll up to eight dice with a choice of six-sided and polyhedral dice, plus a recent-roll history.",
   },
   {
     name: "Coin Flip",
+    image: "/Fadhillah-Portfolio/images/partygames/CoinFlip.png",
     description:
       "Flip a coin with an animated result and keep track of recent flips.",
   },
   {
     name: "Tic-Tac-Toe",
+    image: "/Fadhillah-Portfolio/images/partygames/TicTacToe.png",
     description:
       "Play locally with a friend or challenge the CPU across three difficulty levels.",
   },
   {
     name: "Higher or Lower",
+    image: "/Fadhillah-Portfolio/images/partygames/HigherLower.png",
     description:
       "Take turns guessing the next card from a shuffled deck and compete for points.",
   },
   {
     name: "Higher or Lower +",
+    image: "/Fadhillah-Portfolio/images/partygames/HigherLower+.png",
     description:
       "A party-friendly variation that turns card differences into sips.",
   },
   {
     name: "Blackjack",
+    image: "/Fadhillah-Portfolio/images/partygames/Blackjack.png",
     description:
       "Play against the dealer with betting, hit, stand, double down, and split actions.",
   },
@@ -97,7 +103,11 @@ export const PartyGamesProject = () => {
           </div>
         </section>
 
-        <ScreenshotPlaceholder label="Party Games app preview" />
+        <img
+          src="/Fadhillah-Portfolio/images/partygames/MainMenu.png"
+          alt="Party Games main menu"
+          className="mx-auto w-full max-w-[280px] rounded-xl border border-border"
+        />
 
         <section className="space-y-4">
           <h2 className="text-2xl font-bold">Overview</h2>
@@ -118,7 +128,15 @@ export const PartyGamesProject = () => {
                 key={game.name}
                 className="space-y-3 rounded-xl border border-border bg-card p-4"
               >
-                <ScreenshotPlaceholder label={`${game.name} preview`} />
+                {game.image ? (
+                  <img
+                    src={game.image}
+                    alt={`${game.name} screenshot`}
+                    className="mx-auto w-full max-w-[280px] rounded-xl border border-border"
+                  />
+                ) : (
+                  <ScreenshotPlaceholder label={`${game.name} preview`} />
+                )}
                 <h3 className="text-xl font-semibold">{game.name}</h3>
                 <p className="text-muted-foreground">{game.description}</p>
               </article>
