@@ -19,6 +19,10 @@ const skills = [
   { name: "CSS/Tailwind", level: 80, category: "frontend" },
   { name: ".NET MAUI / XAML", level: 70, category: "frontend" },
   { name: "MVVM", level: 75, category: "frontend" },
+  { name: "Angular", level: 70, category: "frontend" },
+  { name: "Angular Material", level: 70, category: "frontend" },
+  { name: "RxJS", level: 65, category: "frontend" },
+  { name: "Signals", level: 65, category: "frontend" },
 
   // backend and data skills
   { name: "FastAPI", level: 80, category: "backend" },
@@ -45,6 +49,7 @@ const skills = [
   { name: "Godot", level: 75, category: "tools" },
   { name: "User Research and Interaction Design", level: 80, category: "tools" },
   { name: "Prototyping", level: 75, category: "tools" },
+  { name: "Vitest", level: 75, category: "tools" },
 ];
 
 const categories = ["all", "language", "frontend", "backend", "tools"];

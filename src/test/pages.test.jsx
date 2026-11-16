@@ -10,6 +10,7 @@ import { PukProject } from "../pages/PukProject";
 import { SecoProject } from "../pages/SecoProject";
 import { PartyGamesProject } from "../pages/PartyGamesProject";
 import { ChibotProject } from "../pages/ChibotProject";
+import { ShelfGuardProject } from "../pages/ShelfGuard";
 
 const pages = [
   ["Home", Home],
@@ -19,6 +20,7 @@ const pages = [
   ["SECO project", SecoProject],
   ["Party Games project", PartyGamesProject],
   ["Chibot project", ChibotProject],
+  ["ShelfGuard project", ShelfGuardProject],
   ["Not found", NotFound],
 ];
 

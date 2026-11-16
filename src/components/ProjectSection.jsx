@@ -71,6 +71,17 @@ const projects = [
     cardImage: "/Fadhillah-Portfolio/images/chibot/chibot_icon.png",
     imageClassName: "object-contain p-1",
   },
+  {
+    id: 7,
+    title: "ShelfGuard: Inventory and Team Access Dashboard",
+    description:
+      "An Angular 21 warehouse dashboard with role-based access, a reactive stock form with async SKU validation, and a tested mock backend, built to learn Angular from my React background.",
+    tags: ["Angular", "TypeScript", "Angular Material", "Signals", "RxJS", "Vitest"],
+    demoURL: null,
+    gitURL: "https://github.com/AditFadhillah/ShelfGuard",
+    detailPath: "/projects/shelfguard",
+    cardImage: null,
+  },
 ];
 
 export const ProjectSection = () => {
