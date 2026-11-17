@@ -80,7 +80,7 @@ const projects = [
     demoURL: null,
     gitURL: "https://github.com/AditFadhillah/ShelfGuard",
     detailPath: "/projects/shelfguard",
-    cardImage: null,
+    cardImage: "/Fadhillah-Portfolio/images/shelfguard/ShelfGuard_Hero.png",
   },
 ];
 

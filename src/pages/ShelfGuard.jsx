@@ -56,7 +56,11 @@ export const ShelfGuardProject = () => {
         </section>
 
         <section className="space-y-4">
-          <ScreenshotPlaceholder label="Hero screenshot: the inventory dashboard with the toolbar and role switcher" />
+          <img
+            src="/Fadhillah-Portfolio/images/shelfguard/ShelfGuard_Hero.png"
+            alt="Hero screenshot: the inventory dashboard with the toolbar and role switcher"
+            className="w-full rounded-lg border border-border"
+          />
         </section>
 
         <section className="space-y-4">
@@ -92,7 +96,11 @@ export const ShelfGuardProject = () => {
               and a functional route guard sends Viewers away from the settings page
               with a warning message.
             </p>
-            <ScreenshotPlaceholder label="Admin view with delete buttons next to the Viewer view without them" />
+            <img
+              src="/Fadhillah-Portfolio/images/shelfguard/AdminDeleteButton.png"
+              alt="Admin view with delete buttons next to the Viewer view without them"
+              className="w-full rounded-lg border border-border"
+            />
           </div>
 
           <div className="space-y-3">
@@ -103,7 +111,11 @@ export const ShelfGuardProject = () => {
               and a fast run of keystrokes never shows results from an older query.
               Deleting an item asks for confirmation first.
             </p>
-            <ScreenshotPlaceholder label="Inventory table with search text entered and a status filter applied" />
+            <img
+              src="/Fadhillah-Portfolio/images/shelfguard/InventorySearch.png"
+              alt="Inventory table with search text entered and a status filter applied"
+              className="w-full rounded-lg border border-border"
+            />
           </div>
 
           <div className="space-y-3">
@@ -114,7 +126,6 @@ export const ShelfGuardProject = () => {
               least one is required. Submit stays disabled while the form is invalid,
               the SKU check is running, or a save is in progress.
             </p>
-            <ScreenshotPlaceholder label="Add item form showing the 'SKU already exists' error and two suppliers" />
           </div>
 
           <div className="space-y-3">
@@ -124,7 +135,11 @@ export const ShelfGuardProject = () => {
               exists. The form previews the new stock level as the quantity is typed,
               then adds the quantity to the item's stock.
             </p>
-            <ScreenshotPlaceholder label="Receive delivery page with the new stock level preview" />
+            <img
+              src="/Fadhillah-Portfolio/images/shelfguard/ReceiveDelivery .png"
+              alt="Receive delivery page with the new stock level preview"
+              className="w-full rounded-lg border border-border"
+            />
           </div>
 
           <div className="space-y-3">
@@ -133,7 +148,11 @@ export const ShelfGuardProject = () => {
               A lazy-loaded page that lists the team and their roles. It is available to
               Admins only.
             </p>
-            <ScreenshotPlaceholder label="Settings page with the team table" />
+            <img
+              src="/Fadhillah-Portfolio/images/shelfguard/AdminTeamAccess.png"
+              alt="Settings page with the team table"
+              className="w-full rounded-lg border border-border"
+            />
           </div>
         </section>
 
@@ -149,7 +168,6 @@ export const ShelfGuardProject = () => {
             in-memory mock backend after a short delay. Because of this, swapping in a
             real server later would not require changing the services.
           </p>
-          <ScreenshotPlaceholder label="Architecture diagram: components, services, interceptors, mock backend" />
         </section>
 
         <section className="space-y-4">
@@ -169,7 +187,11 @@ export const ShelfGuardProject = () => {
             and mock backend, the interceptors, the SKU validator, the role guard, role
             switching, and the main components. Together there are 45 tests.
           </p>
-          <ScreenshotPlaceholder label="Terminal output showing the passing test run" />
+          <img
+            src="/Fadhillah-Portfolio/images/shelfguard/Vitest.png"
+            alt="Terminal output showing the passing test run"
+            className="w-full rounded-lg border border-border"
+          />
         </section>
 
         <section className="space-y-4">
